@@ -18,8 +18,11 @@ body {
   background-color: var(--bg);
   color: #fff;
   /* height: 2000vh; */
+  /* display: none; */
 }
-
+body h1 {
+  display: inline-block;
+}
 /* navbar */
 
 .navbar {
@@ -335,7 +338,9 @@ body {
   html {
     font-size: 62.5%;
   }
-
+  body {
+    display: inline-block;
+  }
   #hamburger-menu {
     display: inline-block;
   }
