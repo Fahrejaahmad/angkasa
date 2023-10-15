@@ -15,6 +15,9 @@
   <script src="https://unpkg.com/feather-icons"></script>
   <!-- style -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- animation css -->
+  <link rel="manifest" href="js/manifest.json">
+
 </head>
 
 <body>
@@ -24,14 +27,14 @@
     <div class="navbar-nav">
       <a href="#home">Home</a>
       <a href="#about">Tentang Kami</a>
-      <a href="https://wa.me/+6285860321855">Hubungi Developer</a>
-      <a href="#menu">Struktur</a>
+      <a href="#struktur">Struktur</a>
+      <a href="#galeri">Galeri</a>
       <a href="#contact">Kontak</a>
     </div>
     <div class="navbar-extra">
-      <!-- <a href="#" id="search"><i data-feather="search"></i></a> -->
-      <a href="https://www.instagram.com/angkasa.tw0o/?hl=id" id="shopping-cart"><i data-feather="instagram"></i></a>
-      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      <a href="#" id="installButton" style="display: none;" ><i data-feather="download" ></i></a>
+      <a href="https://www.instagram.com/angkasa.tw0o/?hl=id"><i data-feather="instagram"></i></a>
+      <a  id="hamburger-menu"><i data-feather="menu"></i></a>
     </div>
   </nav>
   <!-- Navbar End -->
@@ -41,7 +44,7 @@
     <main class="content">
       <h1>SELAMAT DATANG DI <span>ANGKASA</span></h1>
       <p>"Jika kita bersatu, tidak ada yang tidak mungkin. Bersama, kita bisa menggapai bintang-bintang di angkasa."</p>
-      <a href="#" class="cta">jelajahi</a>
+      <a href="#about" class="cta">jelajahi</a>
     </main>
   </section>
   <!-- Hero Section End-->
@@ -55,30 +58,78 @@
       </div>
       <div class="content">
         <h3>"Angkatan Salapan Dua"</h3>
-        <p>Kelas 9.2, yang kami juluki "Angkasa," adalah petualangan belajar kami. Seperti penjelajah angkasa, kami menjelajahi dunia pengetahuan, menaklukkan tantangan, dan bersiap menghadapi masa depan.
+        <p>Kelas 9.2, yang kami juluki "Angkasa," adalah petualangan belajar kami. Seperti penjelajah angkasa, kami
+          menjelajahi dunia pengetahuan, menaklukkan tantangan, dan bersiap menghadapi masa depan.
         </p>
-        <p>"Belajar adalah wahana kita menuju angkasa pengetahuan yang tak terbatas, di mana hanya imajinasi yang menjadi batasnya."</p>
+        <p>"Belajar adalah wahana kita menuju angkasa pengetahuan yang tak terbatas, di mana hanya imajinasi yang
+          menjadi batasnya."</p>
         <p>- Angkasa Class -</p>
       </div>
     </div>
   </section>
   <!-- About Section End -->
 
-  <!-- menu section start -->
-  <!-- <section id="menu" class="menu">
-    <h2><span>struktur</span> Kelas</h2>
-    <p>Struktur kelas adalah dasar bagi perjalanan kami di dunia pendidikan, seperti struktur bintang-bintang di angkasa yang membimbing astronot menuju tujuan.</p>
-
-  </section> -->
-  <!-- menu section end -->
-
-  <!-- kontak section start -->
-
-
-
-  <!-- feather icons -->
+  <!-- Struktur Section Start -->
+  <section id="struktur" class="struktur">
+        <h2><span>Struktur</span> Organisasi</h2>
+        <p>Struktur kelas adalah seperti dasar kuat yang memungkinkan perjalanan kami mengejar bintang-bintang impian di angkasa pendidikan.</p>
+        <div class="row">
+          <div class="struktur-card">
+            <img src="img/wali-kelas.jpg" alt="Wali kelas" >
+            <div class="deskripsi">
+              <h3>Wali Kelas</h3>
+              <p>seperti bintang, mengarahkan perjalanan kami menuju masa depan.</p>
+            </div>
+          </div>
+          <div class="struktur-card">
+            <div class="deskripsi">
+              <h3>Ketua Kelas</h3>
+              <p>"Ketua kelas, pemimpin yang mengilhami, secercah bintang di angkasa.</p>
+            </div>
+            <img src="img/murid-1.jpg" alt="Murid">
+          </div>
+          <div class="struktur-card">
+            <img src="img/murid-1.jpg" alt="Murid">
+            <div class="deskripsi">
+              <h3>Wakil Ketua Kelas</h3>
+              <p>Wakil ketua kelas, setia menemani, seperti bintang terdekat di angkasa.</p>
+            </div>
+          </div>
+          <div class="struktur-card">
+            <div class="deskripsi">
+              <h3>Sekertaris 1</h3>
+              <p>Sekertaris 1, mencatat jejak kami, seperti konstelasi di angkasa pendidikan.</p>
+            </div>
+            <img src="img/murid-1.jpg" alt="Murid">
+          </div>
+          <div class="struktur-card">
+            <img src="img/murid-1.jpg" alt="Murid">
+            <div class="deskripsi">
+              <h3>Sekertaris 2</h3>
+              <p>Sekertaris 2, membantu menyusun rencana, secercah bintang pelengkap di angkasa.</p>
+            </div>
+          </div>
+          <div class="struktur-card">
+            <div class="deskripsi">
+              <h3>Bendahara 1</h3>
+              <p>Bendahara 1, mengelola dana seperti bintang menghiasi angkasa.</p>
+            </div>
+            <img src="img/murid-1.jpg" alt="Murid">
+          </div>
+          <div class="struktur-card">
+            <img src="img/murid-1.jpg" alt="Murid">
+            <div class="deskripsi">
+              <h3>Bendahara 2</h3>
+              <p>Bendahara 2, menjaga keuangan, seperti bintang terang di angkasa</p>
+            </div>
+          </div>
+        </div>
+  </section>
+  <!-- Struktur Section End -->
+  
+  <!-- Javascript -->
   <script>
-    feather.replace();
+    feather.replace();;
   </script>
   <!-- my javasript -->
   <script src="js/main.js"></script>

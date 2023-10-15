@@ -14,4 +14,24 @@ document.addEventListener('click', function(e){
 })
 
 
-alert("Website ini masih dalam tahap pengembangan hubungi developer jika Memiliki saran")
+
+
+if ('serviceWorker' in navigator && 'PushManager' in window) {
+  let deferredPrompt; // Variable untuk menyimpan prompt instalasi
+
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault(); // Prevent automatic browser prompt
+    const installButton = document.getElementById('installButton');
+    installButton.style.display = 'block';
+    installButton.addEventListener('click', () => {
+      deferredPrompt = event; // Simpan event prompt
+      event.prompt(); // Show the install prompt
+    });
+  });
+
+  window.addEventListener('appinstalled', (event) => {
+    // Aplikasi sudah diinstal, Anda dapat menyembunyikan tombol Install
+    const installButton = document.getElementById('installButton');
+    installButton.style.display = 'none';
+  });
+}
