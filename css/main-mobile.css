@@ -43,8 +43,6 @@ body {
   body {
     display: none;
   }
-
-
 }
 
 @media (max-width: 768px) {
@@ -101,6 +99,7 @@ body {
 
   .navbar .navbar-nav.active {
     right: 0;
+    overflow: hidden;
   }
 
   .navbar .navbar-nav a {
