@@ -240,7 +240,7 @@ body {
     /* width: 90%; */
     width: 100%;
     border-radius: 1rem;
-    height: 24rem;
+    height: 20rem;
     object-fit: cover;
     object-position: center;
   }
@@ -250,7 +250,10 @@ body {
     /* padding: 0 1rem; */
     padding: 0;
     text-align: center;
+    display: inline-block;
     /* background-color: var(--primary); */
+    width: 100%;
+    height: 100%;
   }
 
   .about .row .content h3 {
@@ -262,7 +265,7 @@ body {
   }
 
   .about .row .content p {
-    margin-bottom: .8rem;
+    margin-bottom: .5rem;
     /* font-size: 1.4rem; */
     font-weight: 100;
     line-height: 1.6;
@@ -281,6 +284,15 @@ body {
     margin: auto;
     font-weight: 100;
     line-height: 1.6;
+  }
+
+  .all-member {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: .6rem;
+    background-color: var(--primary);
+    margin: 1rem auto;
+    border-radius: .5rem;
   }
 
   .menu .row {
@@ -335,34 +347,82 @@ body {
   .struktur-card {
     /* background-color: blueviolet; */
     display: flex;
-    margin-top: 4rem;
+    justify-content: space-evenly;
+    margin-top: 3rem;
     /* flex-wrap: wrap; */
+    /* margin: 10px;  */
+
+
+    /* display: inline-block;
+    /* Memberikan jarak antar gambar */
   }
 
-  .struktur .row .struktur-card img {
-    width: 28%;
-    border-radius: 50%;
-    box-shadow: 1px 2px 1px white;
+  .struktur .row .struktur-card .imgstruktur {
+    width: 30%;
+    border-radius: 20%;
+    /* box-shadow: 1px 2px 1px white; */
+    cursor: pointer; /* Menjadikan kursor menjadi pointer saat dihover */
+    margin-left: 1rem;
+    /* display: inline-block;
+    max-width: 200px; /* Lebar maksimum untuk gambar */
+    /* height: auto; */ 
   }
 
   .struktur .row .struktur-card .deskripsi {
     /* background-color: tomato; */
     display: inline-block;
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
     height: 100%;
   }
 
   .struktur .row .struktur-card .deskripsi h3 {
     text-align: center;
     font-size: 1.6rem;
-    margin-bottom: .2rem;
+    margin-bottom: .1rem;
   }
 
   .struktur .row .struktur-card .deskripsi p {
     text-align: left;
     margin-left: 3rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
   }
 
+  /* CSS untuk pop-up */
+  .popup {
+    display: none;
+    position: fixed;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* transition: .5s; */
+    text-align: center;
+    background-color: var(--primary);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 1.7rem;
+    z-index: 9999;
+  }
+
+  .popup .imgpopup {
+    width: 100%;
+    border-radius: .8rem;
+    margin-bottom: .7rem;
+  }
+
+  .popup .tbl-popup {
+    background-color: gold;
+    padding: .8rem;
+    margin: 1rem;
+    border-radius: .6rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  .popup .tbl-popup:hover {
+    background-color: var(--bg);
+    color: white;
+  }
 
 }
