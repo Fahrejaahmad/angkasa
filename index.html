@@ -181,6 +181,78 @@
   </section>
   <!-- Struktur Section End -->
 
+
+
+  <section id="galeri">
+    <h2>GALLERY</h2>
+
+    <div class="gallery">
+      <div class="image" onclick="openModal();currentSlide(1)">
+        <img src="img/galeri-1.jpg" alt="Image 1">
+      </div>
+      <div class="image" onclick="openModal();currentSlide(2)">
+        <img src="img/galeri-2.jpg" alt="Image 2">
+      </div>
+      <div class="image" onclick="openModal();currentSlide(2)">
+        <img src="img/galeri-3.jpg" alt="Image 2">
+      </div>
+      <div class="image" onclick="openModal();currentSlide(2)">
+        <img src="img/galeri-4.jpg" alt="Image 2">
+      </div>
+      <div class="image" onclick="openModal();currentSlide(2)">
+        <img src="img/galeri-5.jpg" alt="Image 2">
+      </div>
+      <div class="image" onclick="openModal();currentSlide(2)">
+        <img src="img/galeri-6.jpg" alt="Image 2">
+      </div>
+      <!-- Tambahkan gambar lainnya di sini -->
+    </div>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close-text" onclick="closeModal()">Tutup</span>
+        <span class="close-icon" onclick="closeModal()">&times;</span>
+        <div class="mySlides">
+          <img src="img/galeri-1.jpg" style="width:100%" alt="Image 1">
+        </div>
+        <div class="mySlides">
+          <img src="img/galeri-2.jpg" style="width:100%" alt="Image 2">
+        </div>
+        <div class="mySlides">
+          <img src="img/galeri-3.jpg" style="width:100%" alt="Image 2">
+        </div>
+        <div class="mySlides">
+          <img src="img/galeri-4.jpg" style="width:100%" alt="Image 2">
+        </div>
+        <div class="mySlides">
+          <img src="img/galeri-5.jpg" style="width:100%" alt="Image 2">
+        </div>
+        <div class="mySlides">
+          <img src="img/galeri-6.jpg" style="width:100%" alt="Image 2">
+        </div>
+        <!-- Tambahkan gambar lainnya di sini -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+   
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- Javascript -->
   <script>
     feather.replace();;
