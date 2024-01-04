@@ -50,6 +50,21 @@ body {
     font-size: 62.5%;
   }
 
+  /* CSS */
+.scrolling-section {
+  width: 100%;
+  height: 300px;
+  overflow-y: auto; /* Menggunakan auto agar scrollbar muncul jika diperlukan */
+  border: 1px solid #ccc;
+  /* Menyembunyikan scrollbar */
+  scrollbar-width: none; /* Untuk Firefox */
+  -ms-overflow-style: none; /* Untuk Internet Explorer/Edge */
+}
+
+.scrolling-section::-webkit-scrollbar {
+  display: none; /* Untuk browser yang menggunakan mesin render WebKit */
+}
+
   /* body {
     display: inline-block;
   } */
@@ -427,14 +442,32 @@ body {
 
 /* Style Galeri */
   #galeri{
-    /* width: 100%; */
-    height: 100vh;
+    width: 100%;
+    height: 90vh;
     text-align: center;
     /* overflow: scroll; */
+   /* width: 100%;  Atur lebar sesuai kebutuhan 
+    height: 300px;  Atur tinggi sesuai kebutuhan 
+    overflow-x: scroll;  Menambahkan scroll secara vertikal 
+    border: 1px solid #ccc; Atur bingkai sesuai kebutuhan */
   }
 
+  .galeri-scroll {
+    margin-top: 5rem;
+   width: 100%; 
+    height: 75vh;  
+    overflow: scroll; 
+    border-top: .2rem solid #ccc; 
+    border-bottom: .2rem solid #ccc; 
+    border-radius: 1rem;
+  }
+
+  .galeri-content {
+    padding: 20px; 
+    /* ... (style lainnya untuk konten di dalam section) */
+  }
   #galeri h2 {
-    margin-top: 9rem;
+    margin-top: 10rem;
     font-size: 2.6rem;
   }
 
@@ -443,7 +476,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 20px;
+  /* background-color: red; */
+  /* margin: 20px; */
 }
 
 .image {
