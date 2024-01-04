@@ -68,8 +68,8 @@
         </p>
         <p>"Belajar adalah wahana kita menuju angkasa pengetahuan yang tak terbatas, di mana hanya imajinasi yang
           menjadi batasnya."</p>
-        </div>
-        <a href="#" class="all-member">See A ll Members</a>
+      </div>
+      <a href="#" class="all-member">See A ll Members</a>
     </div>
   </section>
   <!-- About Section End -->
@@ -79,7 +79,7 @@
     <h2><span>Struktur</span> Organisasi</h2>
     <p>Struktur kelas adalah seperti dasar kuat yang memungkinkan perjalanan kami mengejar bintang-bintang impian di
       angkasa pendidikan.</p>
-      <p>Tekan Avatar untuk informasi lebih lanjut</p>
+    <p>Tekan Avatar untuk informasi lebih lanjut</p>
     <div class="row">
       <div class="struktur-card">
         <img src="img/wali-kelas.jpg" alt="Wali kelas" onclick="showPopup(this)" id="gambarPopup" class="imgstruktur">
@@ -94,7 +94,7 @@
           <button onclick="hidePopup()" class="tbl-popup">Tutup</button>
         </div>
       </div>
-      
+
       <div class="struktur-card">
         <div class="deskripsi">
           <h3>Ketua Kelas</h3>
@@ -166,7 +166,8 @@
 
 
       <div class="struktur-card">
-        <img src="img/murid-1.jpg" alt="Murid" onclick="popupBendaraDua()" id="gambarPopupBendaraDua" class="imgstruktur">
+        <img src="img/murid-1.jpg" alt="Murid" onclick="popupBendaraDua()" id="gambarPopupBendaraDua"
+          class="imgstruktur">
         <div class="deskripsi">
           <h3>Bendahara 2</h3>
           <p onclick="popupBendaraDua()">Nama Bendahara 2</p>
@@ -181,63 +182,67 @@
   </section>
   <!-- Struktur Section End -->
 
-
-
+  <!-- Gallery Section Start -->
   <section id="galeri">
     <h2>GALLERY</h2>
+    <div class="galeri-scroll">
+      <div class="galeri-content">
 
-    <div class="gallery">
-      <div class="image" onclick="openModal();currentSlide(1)">
-        <img src="img/galeri-1.jpg" alt="Image 1">
+
+        <div class="gallery">
+          <div class="image" onclick="openModal();currentSlide(1)">
+            <img src="img/galeri-1.jpg" alt="Image 1">
+          </div>
+          <div class="image" onclick="openModal();currentSlide(2)">
+            <img src="img/galeri-2.jpg" alt="Image 2">
+          </div>
+          <div class="image" onclick="openModal();currentSlide(3)">
+            <img src="img/galeri-3.jpg" alt="Image 2">
+          </div>
+          <div class="image" onclick="openModal();currentSlide(4)">
+            <img src="img/galeri-4.jpg" alt="Image 2">
+          </div>
+          <div class="image" onclick="openModal();currentSlide(5)">
+            <img src="img/galeri-5.jpg" alt="Image 2">
+          </div>
+          <div class="image" onclick="openModal();currentSlide(6)">
+            <img src="img/galeri-6.jpg" alt="Image 2">
+          </div>
+          <!-- Tambahkan gambar lainnya di sini -->
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close-text" onclick="closeModal()">Tutup</span>
+            <span class="close-icon" onclick="closeModal()">&times;</span>
+            <div class="mySlides">
+              <img src="img/galeri-1.jpg" style="width:100%" alt="Image 1">
+            </div>
+            <div class="mySlides">
+              <img src="img/galeri-2.jpg" style="width:100%" alt="Image 2">
+            </div>
+            <div class="mySlides">
+              <img src="img/galeri-3.jpg" style="width:100%" alt="Image 3">
+            </div>
+            <div class="mySlides">
+              <img src="img/galeri-4.jpg" style="width:100%" alt="Image 4">
+            </div>
+            <div class="mySlides">
+              <img src="img/galeri-5.jpg" style="width:100%" alt="Image 5">
+            </div>
+            <div class="mySlides">
+              <img src="img/galeri-6.jpg" style="width:100%" alt="Image 6">
+            </div>
+            <!-- Tambahkan gambar lainnya di sini -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
       </div>
-      <div class="image" onclick="openModal();currentSlide(2)">
-        <img src="img/galeri-2.jpg" alt="Image 2">
-      </div>
-      <div class="image" onclick="openModal();currentSlide(3)">
-        <img src="img/galeri-3.jpg" alt="Image 2">
-      </div>
-      <div class="image" onclick="openModal();currentSlide(4)">
-        <img src="img/galeri-4.jpg" alt="Image 2">
-      </div>
-      <div class="image" onclick="openModal();currentSlide(5)">
-        <img src="img/galeri-5.jpg" alt="Image 2">
-      </div>
-      <div class="image" onclick="openModal();currentSlide(6)">
-        <img src="img/galeri-6.jpg" alt="Image 2">
-      </div>
-      <!-- Tambahkan gambar lainnya di sini -->
     </div>
-    
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close-text" onclick="closeModal()">Tutup</span>
-        <span class="close-icon" onclick="closeModal()">&times;</span>
-        <div class="mySlides">
-          <img src="img/galeri-1.jpg" style="width:100%" alt="Image 1">
-        </div>
-        <div class="mySlides">
-          <img src="img/galeri-2.jpg" style="width:100%" alt="Image 2">
-        </div>
-        <div class="mySlides">
-          <img src="img/galeri-3.jpg" style="width:100%" alt="Image 2">
-        </div>
-        <div class="mySlides">
-          <img src="img/galeri-4.jpg" style="width:100%" alt="Image 2">
-        </div>
-        <div class="mySlides">
-          <img src="img/galeri-5.jpg" style="width:100%" alt="Image 2">
-        </div>
-        <div class="mySlides">
-          <img src="img/galeri-6.jpg" style="width:100%" alt="Image 2">
-        </div>
-        <!-- Tambahkan gambar lainnya di sini -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-    </div>
-   
   </section>
+  <!-- Gallery Section End -->
 
 
 
