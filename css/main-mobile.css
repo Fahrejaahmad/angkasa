@@ -51,19 +51,23 @@ body {
   }
 
   /* CSS */
-.scrolling-section {
-  width: 100%;
-  height: 300px;
-  overflow-y: auto; /* Menggunakan auto agar scrollbar muncul jika diperlukan */
-  border: 1px solid #ccc;
-  /* Menyembunyikan scrollbar */
-  scrollbar-width: none; /* Untuk Firefox */
-  -ms-overflow-style: none; /* Untuk Internet Explorer/Edge */
-}
+  .scrolling-section {
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    /* Menggunakan auto agar scrollbar muncul jika diperlukan */
+    border: 1px solid #ccc;
+    /* Menyembunyikan scrollbar */
+    scrollbar-width: none;
+    /* Untuk Firefox */
+    -ms-overflow-style: none;
+    /* Untuk Internet Explorer/Edge */
+  }
 
-.scrolling-section::-webkit-scrollbar {
-  display: none; /* Untuk browser yang menggunakan mesin render WebKit */
-}
+  .scrolling-section::-webkit-scrollbar {
+    display: none;
+    /* Untuk browser yang menggunakan mesin render WebKit */
+  }
 
   /* body {
     display: inline-block;
@@ -376,11 +380,12 @@ body {
     width: 30%;
     border-radius: 20%;
     /* box-shadow: 1px 2px 1px white; */
-    cursor: pointer; /* Menjadikan kursor menjadi pointer saat dihover */
+    cursor: pointer;
+    /* Menjadikan kursor menjadi pointer saat dihover */
     margin-left: 1rem;
     /* display: inline-block;
     max-width: 200px; /* Lebar maksimum untuk gambar */
-    /* height: auto; */ 
+    /* height: auto; */
   }
 
   .struktur .row .struktur-card .deskripsi {
@@ -440,16 +445,16 @@ body {
     color: white;
   }
 
-/* Style Galeri */
-  #galeri{
+  /* Style Galeri */
+  /* #galeri{
     width: 100%;
     height: 90vh;
     text-align: center;
-    /* overflow: scroll; */
-   /* width: 100%;  Atur lebar sesuai kebutuhan 
+    overflow: scroll; 
+   width: 100%;  Atur lebar sesuai kebutuhan 
     height: 300px;  Atur tinggi sesuai kebutuhan 
     overflow-x: scroll;  Menambahkan scroll secara vertikal 
-    border: 1px solid #ccc; Atur bingkai sesuai kebutuhan */
+    border: 1px solid #ccc; Atur bingkai sesuai kebutuhan
   }
 
   .galeri-scroll {
@@ -464,7 +469,6 @@ body {
 
   .galeri-content {
     padding: 20px; 
-    /* ... (style lainnya untuk konten di dalam section) */
   }
   #galeri h2 {
     margin-top: 10rem;
@@ -476,13 +480,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* background-color: red; */
-  /* margin: 20px; */
 }
 
 .image {
   margin: 5px;
-  /* border: 2px solid #fff; */
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
@@ -499,7 +500,6 @@ body {
   object-fit: cover;
 }
 
-/* Style Modal */
 .modal {
   display: none;
   position: fixed;
@@ -519,19 +519,16 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 800px;
-  /* background-color: red; */
   height: 90vh;
 }
 
 .mySlides img {
   width: 100%;
-  /* background-color: red; */
 }
 
 .close {
   position: absolute;
   top: 15px;
-  /* display: none; */
   right: 35px;
   color: #f1f1f1;
   font-size: 40px;
@@ -566,7 +563,7 @@ body {
   background-color: #3f3f3f;
 }
 
-/* ... (kode lainnya) ... */
+
 
 .prev {
   left: 10px;
@@ -576,10 +573,10 @@ body {
 .next {
   right: 10px;
   border-radius: 0 3px 3px 0;
-}
+} */
 
-/* ... (kode lainnya) ... */
 
+  /* 
 .close-text {
   position: absolute;
   bottom: 10px;
@@ -610,15 +607,88 @@ body {
 
 .close-icon:hover {
   color: #bbb;
-}
+} */
 
-/* ... (kode lainnya) ... */
+  /* ... (kode lainnya) ... */
+  #gallery {
+    width: 100%;
+    height: 100vh;
+  }
+  .title-gallery {
+    /* background-color: red; */
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .title-gallery h1 {
+    /* background-color: blue; */
+    /* padding: ; */
+    margin-top: 3.3rem;
+    font-size: 2rem;
+  }
 
+  .gallery,
+  .gallery-2 {
+    position: relative;
+    overflow: hidden;
+  }
 
+  .gallery-content,
+  .gallery-content-2 {
+    display: flex;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    /* background-color: rebeccapurple; */
+  }
 
+  .item,
+  .item-2 {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+    margin-top: .8rem;
+    /* background-color: aqua; */
+    /* height: 40vh; */
+  }
 
+  .item img,
+  .item-2 img {
+    width: 100%;
+    height: auto;
+  }
 
+  .scroll-btn,
+  .scroll-btn-2 {
+    position: absolute;
+    top: 50%;
+    margin: 5px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+  }
 
+  .left,
+  .left-2 {
+    left: 0;
+  }
+
+  .right,
+  .right-2 {
+    right: 0;
+  }
+
+  .counter,
+  .counter-2 {
+    position: absolute;
+    /* font-size: 1.2rem; */
+    top: 4rem;
+    right: 10px;
+    color: black;
+  }
 
 
 
